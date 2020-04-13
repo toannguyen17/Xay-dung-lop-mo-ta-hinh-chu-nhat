@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>[Bài tập] Xây dựng lớp mô tả hình chữ nhật</title>
+	<script type="text/javascript" src="Rectangle.js"></script>
+</head>
+<body>
+	<p>[Bài tập] Xây dựng lớp mô tả hình chữ nhật</p>
+	<script type="text/javascript">
+		let rectangle = new Rectangle(10, 20);
+
+		// thay đổi chiều rộng
+		rectangle.width = prompt('Nhập chiều rộng mới cho hình chữ nhật.');
+
+		// thay đổi chiều cao
+		rectangle.height = prompt('Nhập chiều cao mới cho hình chữ nhật.');
+
+		// in ra diện tích và chu vi
+		alert('Diện tích: '+ rectangle.getArea() + '\nChu vi: '+ rectangle.getPerimeter());
+	</script>
+</body>
+</html>
