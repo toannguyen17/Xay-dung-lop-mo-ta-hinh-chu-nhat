@@ -24,3 +24,13 @@ Rectangle.prototype.getArea = function() {
 Rectangle.prototype.getPerimeter = function() {
     return this.width*2+this.height*2;
 }
+
+// Tính chu vi
+Rectangle.prototype.draw = function() {
+    let canvas = document.querySelector('#myCanvas');
+    let ctx = canvas.getContext('2d');
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle = 'red';
+    ctx.beginPath();
+	ctx.fillRect(0, 0, this.width, this.height);
+}
